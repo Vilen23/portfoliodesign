@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const router = useRouter();
   return (
-    
     <div className="flex w-[100vw] justify-center py-5 ">
       <BackgroundGradient className="flex justify-around px-5 md:px-10 items-center h-[8vh] w-fit rounded-full gap-10  bg-[#1e1e2e]">
         <div className="title text-3xl font-semibold md:mr-10 flex items-center gap-2 cursor-pointer">
@@ -25,17 +24,44 @@ export default function Navbar() {
         </div>
         <div className="text-2xl md:text-xl cursor-pointer flex items-center">
           ./<span className="text-white hidden md:flex">Home</span>
-          <span className="text-white md:hidden"><FaHome/></span>
+          <span className="text-white md:hidden">
+            <FaHome />
+          </span>
         </div>
-        <div onClick={()=>router.push("/#projects")} className="text-xl text-white cursor-pointer">
-          <motion.span 
-          whileHover={{scale:1.1}}
-          transition={{duration:0.5,type:"spring",stiffness:260,damping:20}}
-          className="text-white hidden md:flex ">Projects</motion.span>
-          <span className="md:hidden text-2xl"><GoProjectRoadmap/></span>
+        <div
+          onClick={() => router.push("/#projects")}
+          className="text-xl text-white cursor-pointer"
+        >
+          <motion.span
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.5,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
+            className="text-white hidden md:flex "
+          >
+            Projects
+          </motion.span>
+          <span className="md:hidden text-2xl">
+            <GoProjectRoadmap />
+          </span>
         </div>
-        <div className="text-xl text-white cursor-pointer hidden md:flex">CV</div>
-        <div className="text-white text-2xl md:hidden"><IoDocumentOutline/></div>
+        <a
+          href="/resume.pdf"
+          download
+          className="text-xl text-white cursor-pointer hidden md:flex"
+        >
+          CV
+        </a>
+        <a
+          href="/resume.pdf"
+          download
+          className="text-white text-2xl md:hidden"
+        >
+          <IoDocumentOutline />
+        </a>
       </BackgroundGradient>
     </div>
   );
