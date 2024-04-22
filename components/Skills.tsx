@@ -100,32 +100,83 @@ const tools_2 = [
 ];
 
 const tools_3 = [
-    {
-        id:1,
-        name:"Linux",
-        icon:"/linux.png"
-    }
-]
+  {
+    id: 1,
+    name: "Linux",
+    icon: "/linux.png",
+  },
+];
 
 export default function Skills() {
   return (
     <div className="flex justify-center flex-col">
       <div className="flex items-center justify-center">
-        <span className="text-4xl font-bold">{`<`}</span>
-        <span className="text-5xl text-[#67e8f9] font-semibold">Skills</span>
-        <span className="text-4xl font-bold">{`/>`}</span>
+        <motion.span
+          initial={{ scale: 0.8, x: -100, opacity: 0 }}
+          whileInView={{ scale: 1, x: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          className="text-4xl font-bold"
+        >{`<`}</motion.span>
+        <motion.span
+          initial={{ scale: 0.4, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          className="text-5xl text-[#67e8f9] font-semibold"
+        >
+          Skills
+        </motion.span>
+        <motion.span
+          initial={{ scale: 0.8, x: 100, opacity: 0 }}
+          whileInView={{ scale: 1, x: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          className="text-4xl font-bold"
+        >{`/>`}</motion.span>
       </div>
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {fronendskills.map((skill) => (
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{
+          initial={{ scale: 0.3, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{
+            scale: 1.1,
+            transition: {
               duration: 0.2,
               type: "spring",
               stiffness: 260,
               damping: 20,
-            }}
-            whileTap={{ scale: 0.9 }}
+            },
+          }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 0.2,
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {
+              duration: 0.2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            },
+          }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">
@@ -148,14 +199,33 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {backendSkills.map((skill) => (
           <motion.div
-            whileHover={{ scale: 1.1 }}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
             transition={{
-              duration: 0.2,
+              duration: 1,
               type: "spring",
               stiffness: 260,
               damping: 20,
+              delay: 0.2,
             }}
-            whileTap={{ scale: 0.9 }}
+            whileTap={{
+              scale: 0.9,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">
@@ -178,14 +248,33 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {databases.map((skill) => (
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{
+          initial={{ scale: 0.3, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{
+            scale: 1.1,
+            transition: {
               duration: 0.2,
               type: "spring",
               stiffness: 260,
               damping: 20,
-            }}
-            whileTap={{ scale: 0.9 }}
+            },
+          }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 0.2,
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {
+              duration: 0.2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            },
+          }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">
@@ -208,14 +297,33 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {tools.map((skill) => (
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{
+          initial={{ scale: 0.3, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{
+            scale: 1.1,
+            transition: {
               duration: 0.2,
               type: "spring",
               stiffness: 260,
               damping: 20,
-            }}
-            whileTap={{ scale: 0.9 }}
+            },
+          }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 0.2,
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {
+              duration: 0.2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            },
+          }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">
@@ -238,14 +346,33 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {tools_2.map((skill) => (
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{
+          initial={{ scale: 0.3, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{
+            scale: 1.1,
+            transition: {
               duration: 0.2,
               type: "spring",
               stiffness: 260,
               damping: 20,
-            }}
-            whileTap={{ scale: 0.9 }}
+            },
+          }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 0.2,
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {
+              duration: 0.2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            },
+          }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">
@@ -268,14 +395,33 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10">
         {tools_3.map((skill) => (
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{
+          initial={{ scale: 0.3, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{
+            scale: 1.1,
+            transition: {
               duration: 0.2,
               type: "spring",
               stiffness: 260,
               damping: 20,
-            }}
-            whileTap={{ scale: 0.9 }}
+            },
+          }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 0.2,
+          }}
+          whileTap={{
+            scale: 0.9,
+            transition: {
+              duration: 0.2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            },
+          }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">

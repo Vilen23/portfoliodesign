@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
@@ -13,6 +14,9 @@ export default function Home() {
         </div>
         <div className="w-[100vw] my-10 md:my-20 flex justify-center">
           <Skills />
+        </div>
+        <div className="w-[100vw] my-10 md:my-20 flex justify-center">
+          <Projects/>
         </div>
       </TracingBeam>
     </div>

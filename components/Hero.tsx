@@ -59,7 +59,7 @@ export default function Hero() {
       </div>
       <div>
         <BackgroundGradientt>
-          <DirectionAwareHover imageUrl="/IMG_2402.JPG">
+          <DirectionAwareHover imageUrl="/IMG_2402.JPG" className="md:h-96 md:w-96 h-[300px] w-[300px]">
             <p className=" italic text-xl font-semibold text-[#bbf7d0]">
               "They say a web dev can turn air into code. Well, when I'm around,{" "}
               <span className="text-[#bd93f9]">
