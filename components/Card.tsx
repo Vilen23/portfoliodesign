@@ -34,7 +34,7 @@ export default function Card({ blogContent }: { blogContent: BlogContent }) {
           >
             <div className="flex gap-4 justify-center w-full items-center flex-wrap">
               {blogContent.techstack.map((tech) => (
-                <Image src={tech.img} alt={tech.name} width={30} height={30} />
+                <Image src={tech.img} alt={tech.name} width={30} height={30} key={tech.name}/>
               ))}
             </div>
           </DirectionAwareHover>

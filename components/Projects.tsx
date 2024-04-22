@@ -44,7 +44,7 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 place-items-center my-20 gap-10">
         {blogContent.map((blog) => (
-          <Card blogContent={blog} />
+          <Card blogContent={blog} key={blog.title}/>
         ))}
       </div>
     </div>

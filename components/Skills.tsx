@@ -150,6 +150,7 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {fronendskills.map((skill) => (
           <motion.div
+          key={skill.id}
           initial={{ scale: 0.3, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           whileHover={{
@@ -199,6 +200,7 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {backendSkills.map((skill) => (
           <motion.div
+          key={skill.id}
             initial={{ scale: 0.3, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{
@@ -248,6 +250,7 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {databases.map((skill) => (
           <motion.div
+          key={skill.id}
           initial={{ scale: 0.3, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           whileHover={{
@@ -297,6 +300,7 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {tools.map((skill) => (
           <motion.div
+          key={skill.id}
           initial={{ scale: 0.3, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           whileHover={{
@@ -346,6 +350,7 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {tools_2.map((skill) => (
           <motion.div
+          key={skill.id}
           initial={{ scale: 0.3, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           whileHover={{
@@ -395,6 +400,7 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10">
         {tools_3.map((skill) => (
           <motion.div
+          key={skill.id}
           initial={{ scale: 0.3, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           whileHover={{
