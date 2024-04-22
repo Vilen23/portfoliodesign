@@ -85,8 +85,8 @@ export default function Hero() {
             className="md:h-96 md:w-96 h-[300px] w-[300px]"
           >
             <p className=" italic text-xl font-semibold text-[#bbf7d0]">
-              "They say a web dev can turn air into code. Well, when I'm around,{" "}
-              <span className="text-[#bd93f9]">
+            "Coding isn't just my job;it's my superpower.{" "}
+              <span className="text-[#caa6f7]">
                 {" "}
                 I turn ideas into digital magic.
               </span>
