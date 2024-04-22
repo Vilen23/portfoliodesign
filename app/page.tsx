@@ -15,7 +15,7 @@ export default function Home() {
         <div className="w-[100vw] my-10 md:my-20 flex justify-center">
           <Skills />
         </div>
-        <div className="w-[100vw] my-10 md:my-20 flex justify-center">
+        <div className="w-[100vw] my-10 md:my-20 flex justify-center" id="projects">
           <Projects/>
         </div>
       </TracingBeam>

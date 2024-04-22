@@ -2,10 +2,12 @@
 import React from "react";
 import { FaHome } from "react-icons/fa";
 import { GoProjectRoadmap } from "react-icons/go";
-import { MdContactPage } from "react-icons/md";
 import { BackgroundGradient } from "./ui/background-gradient";
-import { TracingBeam } from "./ui/tracing-beam";
+import { useRouter } from "next/navigation";
+import { IoDocumentOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 export default function Navbar() {
+  const router = useRouter();
   return (
     
     <div className="flex w-[100vw] justify-center py-5 ">
@@ -25,12 +27,15 @@ export default function Navbar() {
           ./<span className="text-white hidden md:flex">Home</span>
           <span className="text-white md:hidden"><FaHome/></span>
         </div>
-        <div className="text-xl text-white cursor-pointer">
-          <span className="text-white hidden md:flex">Projects</span>
+        <div onClick={()=>router.push("/#projects")} className="text-xl text-white cursor-pointer">
+          <motion.span 
+          whileHover={{scale:1.1}}
+          transition={{duration:0.5,type:"spring",stiffness:260,damping:20}}
+          className="text-white hidden md:flex ">Projects</motion.span>
           <span className="md:hidden text-2xl"><GoProjectRoadmap/></span>
         </div>
-        <div className="text-xl text-white cursor-pointer hidden md:flex">Contact Me</div>
-        <div className="text-white text-2xl md:hidden"><MdContactPage/></div>
+        <div className="text-xl text-white cursor-pointer hidden md:flex">CV</div>
+        <div className="text-white text-2xl md:hidden"><IoDocumentOutline/></div>
       </BackgroundGradient>
     </div>
   );

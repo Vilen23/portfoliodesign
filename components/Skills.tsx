@@ -120,7 +120,7 @@ export default function Skills() {
             stiffness: 260,
             damping: 20,
           }}
-          className="text-4xl font-bold"
+          className=" text-3xl md:text-4xl font-bold"
         >{`<`}</motion.span>
         <motion.span
           initial={{ scale: 0.4, opacity: 0 }}
@@ -131,7 +131,7 @@ export default function Skills() {
             stiffness: 260,
             damping: 20,
           }}
-          className="text-5xl text-[#67e8f9] font-semibold"
+          className="text-4xl text-[#67e8f9] font-semibold"
         >
           Skills
         </motion.span>
@@ -144,7 +144,7 @@ export default function Skills() {
             stiffness: 260,
             damping: 20,
           }}
-          className="text-4xl font-bold"
+          className=" text-3xl md:text-4xl font-bold"
         >{`/>`}</motion.span>
       </div>
       <div className="flex justify-center gap-10 mt-10 flex-wrap">

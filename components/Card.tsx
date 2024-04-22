@@ -5,7 +5,6 @@ import { DirectionAwareHover } from "./ui/direction-aware-hover";
 import { MdOnlinePrediction } from "react-icons/md";
 import { GithubIcon } from "lucide-react";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 const space = Space_Grotesk({ subsets: ["latin"], weight: "400" });
 
 export interface BlogContent {
@@ -18,21 +17,19 @@ export interface BlogContent {
 }
 
 export default function Card({ blogContent }: { blogContent: BlogContent }) {
-  const router = useRouter();
   return (
     <motion.div
-    viewport={{once:true}}
     initial={{ scale: 0.8, opacity: 0 }} 
     whileInView={{ scale: 1, opacity: 1 }}
-    transition={{duration:1,type:"spring",stiffness:260,damping:20,delay:0.5}}
-    className="relative">
-      <span className="absolute top-0 left-0 mt-[10px] ml-[10px] h-full   bg-[#8646d7] w-[85vw] md:w-[700px] rounded-xl"></span>
+    transition={{duration:1,type:"spring",stiffness:260,damping:20,delay:0.1}}
+    className="relative md:h-[506px]">
+      <span className="absolute top-0  left-0 mt-[10px] ml-[10px] h-full   bg-[#8646d7] w-[85vw] md:w-[700px] rounded-xl"></span>
       <span
         className={` ${space.className}  relative h-full border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[85vw] md:w-[700px] rounded-xl`}
       >
         <div className="flex flex-col items-center">
           <DirectionAwareHover
-            imageUrl="/portfl.png"
+            imageUrl={blogContent.image}
             className=" w-[270px] md:w-[500px] shadow-2xl border-l-[1px] border-[#374151] border-t-[1px] rounded-xl flex"
           >
             <div className="flex gap-4 justify-center w-full items-center flex-wrap">
@@ -58,7 +55,7 @@ export default function Card({ blogContent }: { blogContent: BlogContent }) {
                 damping: 20,
               }}
               className="px-3 py-2 text-2xl text-[#67e8f9] flex gap-2 items-center cursor-pointer"
-              onClick={() => router.push(blogContent.live)}
+              onClick={() => window.open(blogContent.live)}
             >
               {" "}
               <span>
@@ -76,7 +73,7 @@ export default function Card({ blogContent }: { blogContent: BlogContent }) {
                 damping: 20,
               }}
               className=" cursor-pointer px-3 py-2 text-2xl text-[#caa6f7] flex gap-2 items-center"
-              onClick={() => router.push(blogContent.github)}
+              onClick={() => window.open(blogContent.github)}
             >
               <span>
                 <GithubIcon />
