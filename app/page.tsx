@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -17,6 +18,9 @@ export default function Home() {
         </div>
         <div className="w-[100vw] my-10 md:my-20 flex justify-center" id="projects">
           <Projects/>
+        </div>
+        <div className="w-[100vw] my-10 md:my-20 flex justify-center">
+          <Footer/>
         </div>
       </TracingBeam>
     </div>
