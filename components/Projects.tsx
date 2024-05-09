@@ -163,7 +163,7 @@ const blogContent = [
       },
     ],
     github: "https://github.com/Vilen23/portfoliodesign",
-    live: "http://localhost:3000/",
+    live: "https://www.shivamlather.social/",
   },
   {
     title:"SnipIt",
