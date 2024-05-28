@@ -136,10 +136,10 @@ const blogContent = [
     live:"https://socialy-production.up.railway.app/"
   },
   {
-    title: "Portfolio Website",
+    title: "Scribble",
     description:
-      "The website you are currently on to showcase my work and projects.I have added animations using framer motion.",
-    image: "/portfl.png",
+      "This project lets user create rooms for realtime doodling and chatting",
+    image: "/scribble.png",
     techstack: [
       {
         name: "NextJS",
@@ -161,9 +161,24 @@ const blogContent = [
         color: "#67e8f9",
         img: "/react.svg",
       },
+      {
+        name:"WebSocket",
+        color:"#67e8f9",
+        img:"/webs.png"
+      },
+      {
+        name:"Postgresql",
+        color:"#336791",
+        img:"/postgres.png"
+      },
+      {
+        name:"Prisma",
+        color:"#2d3748",
+        img:"/image.png"
+      },
     ],
-    github: "https://github.com/Vilen23/portfoliodesign",
-    live: "https://www.shivamlather.social/",
+    github: "https://github.com/Vilen23",
+    live: "https://scribble-lilac.vercel.app/",
   },
   {
     title:"SnipIt",
