@@ -44,7 +44,7 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 place-items-center my-20 gap-10">
         {blogContent.map((blog) => (
-          <Card blogContent={blog} key={blog.title}/>
+          <Card blogContent={blog} key={blog.title} />
         ))}
       </div>
     </div>
@@ -53,87 +53,54 @@ export default function Projects() {
 
 const blogContent = [
   {
-    title:"Medium",
-    description:"A Medium clone where users can write and share their stories with others.Can share their photos and stories with others.",
-    image:"/medium.png",
-    techstack:[
+    title: "FingerIt",
+    description:
+      "A Platform to improve typing speed,featuring a custom character mode where users can input chars to practise on words having those chars to build muscle memory,one can also challenge friends in a realtime typing test.",
+    image: "/fingerit.png",
+    techstack: [
       {
-        name:"ReactJs",
-        color:"#61dbfb",
-        img:"/react.svg"
+        name: "NextJs",
+        color: "#61dbfb",
+        img: "/nxt.png",
       },
       {
-        name:"TailwindCSS",
-        color:"#06b6d4",
-        img:"/tailwind.png"
+        name: "Typescript",
+        color: "#007acc",
+        img: "/typescript-icon.svg",
       },
       {
-        name:"Typescript",
-        color:"#007acc",
-        img:"/typescript-icon.svg"
+        name: "React-query",
+        color: "#61dbfb",
+        img: "/react-query.svg",
       },
       {
-        name:"Firebase",
-        color:"#ffca28",
-        img:"/firebase.png"
+        name: "Framer Motion",
+        color: "#010101",
+        img: "/framer.png",
       },
       {
-        name:"Cloudflare workers",
-        color:"#f38020",
-        img:"/cloudflare.png"
+        name: "TailwindCSS",
+        color: "#06b6d4",
+        img: "/tailwind.png",
       },
       {
-        name:"Postgresql",
-        color:"#336791",
-        img:"/postgres.png"
+        name: "WebSocket",
+        color: "#010101",
+        img: "/webs.png",
       },
       {
-        name:"Prisma",
-        color:"#2d3748",
-        img:"/image.png"
-      }
-    ],
-    github:"https://github.com/Vilen23/Medium",
-    live:"https://medium-zeta.vercel.app/"
-  },
-  {
-    title:"Socialy",
-    description:"A social media app where users can post their photos and stories.Users can follow other users and like their posts.",
-    image:"/socialy.png",
-    techstack:[
-      {
-        name:"NextJs",
-        color:"#61dbfb",
-        img:"/nxt.png"
+        name: "Postgresql",
+        color: "#336791",
+        img: "/postgres.png",
       },
       {
-        name:"Typescript",
-        color:"#007acc",
-        img:"/typescript-icon.svg"
-      },
-      {
-        name:'Socket.io',
-        color:"#010101",
-        img:"/socket.png"
-      },
-      {
-        name:"TailwindCSS",
-        color:"#06b6d4",
-        img:"/tailwind.png"
-      },
-      {
-        name:"Postgresql",
-        color:"#336791",
-        img:"/postgres.png"
-      },
-      {
-        name:"Prisma",
-        color:"#2d3748",
-        img:"/image.png"
+        name: "Prisma",
+        color: "#2d3748",
+        img: "/image.png",
       },
     ],
-    github:"https://github.com/Vilen23/Socialy",
-    live:"https://socialy-production.up.railway.app/"
+    github: "https://github.com/Vilen23/fingerit",
+    live: "https://fingerit.vercel.app/",
   },
   {
     title: "Scribble",
@@ -147,9 +114,9 @@ const blogContent = [
         img: "/nxt.png",
       },
       {
-        name:"Typescript",
-        color:"#007acc",
-        img:"/typescript-icon.svg"
+        name: "Typescript",
+        color: "#007acc",
+        img: "/typescript-icon.svg",
       },
       {
         name: "TailwindCSS",
@@ -159,54 +126,140 @@ const blogContent = [
       {
         name: "Framer Motion",
         color: "#67e8f9",
-        img: "/react.svg",
+        img: "/framer.png",
       },
       {
-        name:"WebSocket",
-        color:"#67e8f9",
-        img:"/webs.png"
+        name: "WebSocket",
+        color: "#67e8f9",
+        img: "/webs.png",
       },
       {
-        name:"Postgresql",
-        color:"#336791",
-        img:"/postgres.png"
+        name: "Postgresql",
+        color: "#336791",
+        img: "/postgres.png",
       },
       {
-        name:"Prisma",
-        color:"#2d3748",
-        img:"/image.png"
+        name: "Prisma",
+        color: "#2d3748",
+        img: "/image.png",
       },
     ],
     github: "https://github.com/Vilen23",
     live: "https://scribble-lilac.vercel.app/",
   },
   {
-    title:"SnipIt",
-    description:"A code snippet manager to save and share code snippets.One can save picture of their code and share it with others.",
-    image:"/snipit.png",
-    techstack:[
+    title: "Medium",
+    description:
+      "A Medium clone where users can write and share their stories with others.Can share their photos and stories with others.",
+    image: "/medium.png",
+    techstack: [
       {
-        name:"NextJs",
-        color:"#61dbfb",
-        img:"/nxt.png"
+        name: "ReactJs",
+        color: "#61dbfb",
+        img: "/react.svg",
       },
       {
-        name:"TailwindCSS",
-        color:"#06b6d4",
-        img:"/tailwind.png"
+        name: "TailwindCSS",
+        color: "#06b6d4",
+        img: "/tailwind.png",
       },
       {
-        name:"React",
-        color:"#ffca28",
-        img:"/react.svg"
-      },{
-        name:"Typescript",
-        color:"#007acc",
-        img:"/typescript-icon.svg"
+        name: "Typescript",
+        color: "#007acc",
+        img: "/typescript-icon.svg",
       },
-      
+      {
+        name: "Firebase",
+        color: "#ffca28",
+        img: "/firebase.png",
+      },
+      {
+        name: "Cloudflare workers",
+        color: "#f38020",
+        img: "/cloudflare.png",
+      },
+      {
+        name: "Postgresql",
+        color: "#336791",
+        img: "/postgres.png",
+      },
+      {
+        name: "Prisma",
+        color: "#2d3748",
+        img: "/image.png",
+      },
     ],
-    github:"https://github.com/Vilen23/SnipIt",
-    live:"https://snip-it-blond.vercel.app/"
-  }
+    github: "https://github.com/Vilen23/Medium",
+    live: "https://medium-zeta.vercel.app/",
+  },
+  {
+    title: "Socialy",
+    description:
+      "A social media app where users can post their photos and stories.Users can follow other users and like their posts.",
+    image: "/socialy.png",
+    techstack: [
+      {
+        name: "NextJs",
+        color: "#61dbfb",
+        img: "/nxt.png",
+      },
+      {
+        name: "Typescript",
+        color: "#007acc",
+        img: "/typescript-icon.svg",
+      },
+      {
+        name: "Socket.io",
+        color: "#010101",
+        img: "/socket.png",
+      },
+      {
+        name: "TailwindCSS",
+        color: "#06b6d4",
+        img: "/tailwind.png",
+      },
+      {
+        name: "Postgresql",
+        color: "#336791",
+        img: "/postgres.png",
+      },
+      {
+        name: "Prisma",
+        color: "#2d3748",
+        img: "/image.png",
+      },
+    ],
+    github: "https://github.com/Vilen23/Socialy",
+    live: "https://socialy-production.up.railway.app/",
+  },
+  {
+    title: "SnipIt",
+    description:
+      "A code snippet manager to save and share code snippets.One can save picture of their code and share it with others.",
+    image: "/snipit.png",
+    techstack: [
+      {
+        name: "NextJs",
+        color: "#61dbfb",
+        img: "/nxt.png",
+      },
+      {
+        name: "TailwindCSS",
+        color: "#06b6d4",
+        img: "/tailwind.png",
+      },
+      {
+        name: "React",
+        color: "#ffca28",
+        img: "/react.svg",
+      },
+      {
+        name: "Typescript",
+        color: "#007acc",
+        img: "/typescript-icon.svg",
+      },
+    ],
+    github: "https://github.com/Vilen23/SnipIt",
+    live: "https://snip-it-blond.vercel.app/",
+  },
 ];

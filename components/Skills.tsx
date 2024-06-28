@@ -68,6 +68,23 @@ const databases = [
   },
 ];
 
+const advanced = [
+  {
+    id: 0,
+    name: "Kubernetes",
+    icon: "/kubernetes-icon.svg",
+  },
+  {
+    id: 1,
+    name: "WebSocket",
+    icon: "/webs.png",
+  },
+  {
+    id: 2,
+    name: "AWS",
+    icon: "/aws-icon.svg",
+  },
+];
 const tools = [
   {
     id: 0,
@@ -150,34 +167,34 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {fronendskills.map((skill) => (
           <motion.div
-          key={skill.id}
-          initial={{ scale: 0.3, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          whileHover={{
-            scale: 1.1,
-            transition: {
-              duration: 0.2,
+            key={skill.id}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            transition={{
+              duration: 1,
               type: "spring",
               stiffness: 260,
               damping: 20,
-            },
-          }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-            delay: 0.2,
-          }}
-          whileTap={{
-            scale: 0.9,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
+              delay: 0.2,
+            }}
+            whileTap={{
+              scale: 0.9,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">
@@ -200,7 +217,207 @@ export default function Skills() {
       <div className="flex justify-center gap-10 mt-10 flex-wrap">
         {backendSkills.map((skill) => (
           <motion.div
-          key={skill.id}
+            key={skill.id}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+              delay: 0.2,
+            }}
+            whileTap={{
+              scale: 0.9,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            className="flex flex-wrap justify-center gap-6 cursor-pointer"
+          >
+            <div className="relative ">
+              <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full  rounded  bg-[#34c07c] w-[140px]"></span>
+              <span
+                className={` ${space.className} relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[140px]`}
+              >
+                <Image
+                  src={skill.icon}
+                  width={25}
+                  height={25}
+                  alt={skill.name}
+                />
+                {skill.name}
+              </span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+      <div className="flex justify-center gap-10 mt-10 flex-wrap">
+        {databases.map((skill) => (
+          <motion.div
+            key={skill.id}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+              delay: 0.2,
+            }}
+            whileTap={{
+              scale: 0.9,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            className="flex flex-wrap justify-center gap-6 cursor-pointer"
+          >
+            <div className="relative ">
+              <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full  rounded  bg-[#dc8070] w-[150px] md:w-[160px] "></span>
+              <span
+                className={` ${space.className} relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[150px] md:w-[160px]`}
+              >
+                <Image
+                  src={skill.icon}
+                  width={25}
+                  height={25}
+                  alt={skill.name}
+                />
+                {skill.name}
+              </span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+      <div className="flex justify-center gap-10 mt-10 flex-wrap">
+        {advanced.map((skill) => (
+          <motion.div
+            key={skill.id}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+              delay: 0.2,
+            }}
+            whileTap={{
+              scale: 0.9,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            className="flex flex-wrap justify-center gap-6 cursor-pointer"
+          >
+            <div className="relative ">
+              <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full  rounded  bg-[#67e8f9] w-[150px] md:w-[150px] "></span>
+              <span
+                className={` ${space.className} relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[150px] md:w-[150px]`}
+              >
+                <Image
+                  src={skill.icon}
+                  width={25}
+                  height={25}
+                  alt={skill.name}
+                />
+                {skill.name}
+              </span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+      <div className="flex justify-center gap-10 mt-10 flex-wrap">
+        {tools.map((skill) => (
+          <motion.div
+            key={skill.id}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+              delay: 0.2,
+            }}
+            whileTap={{
+              scale: 0.9,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            className="flex flex-wrap justify-center gap-6 cursor-pointer"
+          >
+            <div className="relative ">
+              <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full  rounded  bg-[#dc8070] w-[140px]"></span>
+              <span
+                className={` ${space.className} relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[140px]`}
+              >
+                <Image
+                  src={skill.icon}
+                  width={25}
+                  height={25}
+                  alt={skill.name}
+                />
+                {skill.name}
+              </span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+      <div className="flex justify-center gap-10 mt-10 flex-wrap">
+        {tools_2.map((skill) => (
+          <motion.div
+            key={skill.id}
             initial={{ scale: 0.3, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{
@@ -247,187 +464,37 @@ export default function Skills() {
           </motion.div>
         ))}
       </div>
-      <div className="flex justify-center gap-10 mt-10 flex-wrap">
-        {databases.map((skill) => (
-          <motion.div
-          key={skill.id}
-          initial={{ scale: 0.3, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          whileHover={{
-            scale: 1.1,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-            delay: 0.2,
-          }}
-          whileTap={{
-            scale: 0.9,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
-            className="flex flex-wrap justify-center gap-6 cursor-pointer"
-          >
-            <div className="relative ">
-              <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full  rounded  bg-[#dc8070] w-[150px] md:w-[160px] "></span>
-              <span
-                className={` ${space.className} relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[150px] md:w-[160px]`}
-              >
-                <Image
-                  src={skill.icon}
-                  width={25}
-                  height={25}
-                  alt={skill.name}
-                />
-                {skill.name}
-              </span>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-      <div className="flex justify-center gap-10 mt-10 flex-wrap">
-        {tools.map((skill) => (
-          <motion.div
-          key={skill.id}
-          initial={{ scale: 0.3, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          whileHover={{
-            scale: 1.1,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-            delay: 0.2,
-          }}
-          whileTap={{
-            scale: 0.9,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
-            className="flex flex-wrap justify-center gap-6 cursor-pointer"
-          >
-            <div className="relative ">
-              <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full  rounded  bg-[#67e8f9] w-[150px]"></span>
-              <span
-                className={` ${space.className} relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[150px]`}
-              >
-                <Image
-                  src={skill.icon}
-                  width={25}
-                  height={25}
-                  alt={skill.name}
-                />
-                {skill.name}
-              </span>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-      <div className="flex justify-center gap-10 mt-10 flex-wrap">
-        {tools_2.map((skill) => (
-          <motion.div
-          key={skill.id}
-          initial={{ scale: 0.3, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          whileHover={{
-            scale: 1.1,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-            delay: 0.2,
-          }}
-          whileTap={{
-            scale: 0.9,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
-            className="flex flex-wrap justify-center gap-6 cursor-pointer"
-          >
-            <div className="relative ">
-              <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full  rounded  bg-[#34c07c] w-[150px]"></span>
-              <span
-                className={` ${space.className} relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-4 py-3 text-md text-white  transition duration-100 flex items-center gap-2 justify-center w-[150px]`}
-              >
-                <Image
-                  src={skill.icon}
-                  width={25}
-                  height={25}
-                  alt={skill.name}
-                />
-                {skill.name}
-              </span>
-            </div>
-          </motion.div>
-        ))}
-      </div>
       <div className="flex justify-center gap-10 mt-10">
         {tools_3.map((skill) => (
           <motion.div
-          key={skill.id}
-          initial={{ scale: 0.3, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          whileHover={{
-            scale: 1.1,
-            transition: {
-              duration: 0.2,
+            key={skill.id}
+            initial={{ scale: 0.3, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
+            transition={{
+              duration: 1,
               type: "spring",
               stiffness: 260,
               damping: 20,
-            },
-          }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-            delay: 0.2,
-          }}
-          whileTap={{
-            scale: 0.9,
-            transition: {
-              duration: 0.2,
-              type: "spring",
-              stiffness: 260,
-              damping: 20,
-            },
-          }}
+              delay: 0.2,
+            }}
+            whileTap={{
+              scale: 0.9,
+              transition: {
+                duration: 0.2,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+              },
+            }}
             className="flex flex-wrap justify-center gap-6 cursor-pointer"
           >
             <div className="relative ">
