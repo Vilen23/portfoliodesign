@@ -49,14 +49,14 @@ export default function Navbar() {
           </span>
         </div>
         <a
-          href="/Resume.pdf"
+          href="/Shivam_Resume.pdf"
           download
           className="text-xl text-white cursor-pointer hidden md:flex"
         >
           CV
         </a>
         <a
-          href="/Resume.pdf"
+          href="/Shivam_Resume.pdf"
           download
           className="text-white text-2xl md:hidden"
         >
